@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* Variables */
+$primary-color: rgb(230, 181, 148);
+$secondary-color: #c9733e;
+
+/* ESTILOS GENERALES */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 10px 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+footer h1 {
+  color: #ffffff;
+  font-size: larger;
+  text-align: center;
+  width: 100%;
+}
+
+footer {
+  background-color: $secondary-color;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@import "navegador";
+
+/* --------------------------------------*/
+/* Estilos específicos para cada página */
+
+/* ESTILOS INICIO */
+@import "inicio";
+
+/* ESTILOS UBICACION */
+@import "ubicacion";
+
+/* ESTILOS GALERIA */
+@import "galeria";
+
+/* ESTILOS CONTACTO */
+@import "form";

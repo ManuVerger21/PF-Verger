@@ -1,0 +1,29 @@
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas de igual tamaño */
+    grid-gap: 10px; /* Espacio entre las imágenes */
+  
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
+    }
+  
+    .grid-item2 {
+      text-align: center;
+      img {
+        max-width: 100%; /* Ajusta el tamaño máximo de las imágenes */
+        height: 80%; /* Mantiene la proporción de aspecto */
+  
+        @media (max-width: 767px) {
+          max-width: 100%;
+          height: 300px;
+        }
+      }
+    }
+  
+    .inicio {
+      h1, h4, p {
+        text-align: center;
+      }
+    }
+  }

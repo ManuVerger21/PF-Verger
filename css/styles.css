@@ -1,0 +1,207 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+/* Variables */
+/* ESTILOS GENERALES */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: rgb(230, 181, 148);
+  color: #fff;
+  padding: 10px 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+footer h1 {
+  color: #ffffff;
+  font-size: larger;
+  text-align: center;
+  width: 100%;
+}
+
+footer {
+  background-color: #c9733e;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navegador {
+  background-color: #d49467;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  flex-direction: column;
+}
+.navegador ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+.navegador ul li {
+  margin: 5px;
+}
+.navegador ul li a {
+  color: #7d3c0d;
+  text-decoration: none;
+  padding: 10px 0px;
+}
+.navegador ul li a:hover {
+  text-decoration: underline;
+  color: #8b4513;
+  box-shadow: 10px 2px 30px rgba(0, 0, 0, 0.2);
+}
+.navegador .logo {
+  margin: 10px;
+  width: 250px;
+  height: 150px;
+}
+
+/* --------------------------------------*/
+/* Estilos específicos para cada página */
+/* ESTILOS INICIO */
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Tres columnas de igual tamaño */
+  grid-gap: 10px; /* Espacio entre las imágenes */
+}
+@media (max-width: 767px) {
+  .grid-container2 {
+    grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
+  }
+}
+.grid-container2 .grid-item2 {
+  text-align: center;
+}
+.grid-container2 .grid-item2 img {
+  max-width: 100%; /* Ajusta el tamaño máximo de las imágenes */
+  height: 80%; /* Mantiene la proporción de aspecto */
+}
+@media (max-width: 767px) {
+  .grid-container2 .grid-item2 img {
+    max-width: 100%;
+    height: 300px;
+  }
+}
+.grid-container2 .inicio h1, .grid-container2 .inicio h4, .grid-container2 .inicio p {
+  text-align: center;
+}
+
+/* ESTILOS UBICACION */
+.ubicacion h1, .ubicacion p {
+  text-align: center;
+}
+
+/* Estilos para el mapa en computadoras */
+#map {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 350px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 767px) {
+  #map {
+    height: 400px;
+  }
+}
+/* ESTILOS GALERIA */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+  grid-gap: 10px; /* Espacio entre las imágenes */
+  margin-top: 30px;
+}
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
+  }
+}
+.grid-container .grid-item {
+  text-align: center;
+}
+.grid-container .grid-item img {
+  max-width: 80%; /* Ajusta el tamaño máximo de las imágenes */
+  height: 90%; /* Mantiene la proporción de aspecto */
+}
+@media (max-width: 767px) {
+  .grid-container .grid-item img {
+    max-width: 100%;
+    height: 300px;
+  }
+}
+
+/* ESTILOS CONTACTO */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Código correspondiente a los estilos de la página de contacto */
+/* Mixin para estilos del botón */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Formulario de contacto */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  width: 400px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  /* Estilos para los campos de formulario */
+  /* Estilos para el botón de envío utilizando el mixin */
+}
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+form input[type=text],
+form input[type=email],
+form input[type=tel],
+form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+form button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: rgb(230, 181, 148);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #dc986b;
+}
+
+/*# sourceMappingURL=styles.css.map */
