@@ -1,4 +1,5 @@
-# EntregaFinal-Verger
-# Subida del trabajo Final . 
-# el repositorio no deja poner un + en el nombre
+# http://belgrano240brc.42web.io/index.html
+# Subida del trabajo Final. 
+# Imagenes sin optimizar. Verger Manuel
+
 
