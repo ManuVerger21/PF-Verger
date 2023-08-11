@@ -1,24 +1,28 @@
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
-    grid-gap: 10px; /* Espacio entre las imágenes */
-    margin-top: 30px;
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+  grid-gap: 10px; /* Espacio entre las imágenes */
+  margin-top: 30px;
+
+  /* Media query para dispositivos con un ancho máximo de 767px (pantallas pequeñas) */
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr; /* Cambia a una columna en dispositivos móviles */
+  }
+}
+
+.grid-item {
+  text-align: center;
+
+  /* Estilos para las imágenes dentro de los elementos .grid-item */
+  img {
+    max-width: 80%; /* Ajusta el tamaño máximo de las imágenes */
+    height: 90%; /* Mantiene la proporción de aspecto */
+
+    /* Media query para dispositivos con un ancho máximo de 767px (pantallas pequeñas) */
     @media (max-width: 767px) {
-      grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
-    }
-  
-    .grid-item {
-      text-align: center;
-      img {
-        max-width: 80%; /* Ajusta el tamaño máximo de las imágenes */
-        height: 90%; /* Mantiene la proporción de aspecto */
-  
-        @media (max-width: 767px) {
-          max-width: 100%;
-          height: 300px;
-        }
-      }
+      max-width: 100%;
+      height: 300px; /* Ajusta la altura de las imágenes en dispositivos móviles */
     }
   }
+}
